@@ -1,0 +1,25 @@
+//reset every default style
+
+@import 'reset' ;
+
+//media query for diffirent breakpoints.
+
+@import 'responsive' ;
+
+//navbar
+
+@import 'navbar' ;
+
+//header
+
+@import 'header' ;
+
+  /*main stylesheet that is responsible for 
+    styling all pages body.
+  excluding page navbar,header and footer 
+  */
+
+@import 'main' ;
+
+//footer section
+@import 'footer'

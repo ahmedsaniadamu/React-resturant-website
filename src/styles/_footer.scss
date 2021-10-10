@@ -1,0 +1,74 @@
+@import 'responsive' ;
+
+// a mixin to set font size for mobile view and tablet view
+
+ @mixin set-font($mobile:0.8rem,$tablet:1rem){
+     @include mobile-view(){
+         font-size: $mobile;
+     }
+     @include tablet-view(){
+          font-size: $tablet;
+     }
+ }
+
+ footer{
+       div.footer-content{
+         background: rgb(4, 145, 15);
+         h4{
+             color: rgba(255,255,255,0.8);
+             font-size: 1.1rem;
+             letter-spacing: 1px !important;
+             font-weight: 300 !important;
+             @include set-font(0.8rem,0.9rem );
+         }
+         ul{
+             li{
+                 font-size: 00.9rem;
+                 @include set-font(0.6rem,0.7rem );
+                 color: rgba(255,255,255,0.6);
+                 margin-left: 2rem !important;
+                 transition: .2s;
+                 &:hover{
+                     cursor: pointer;
+                     color: rgba(255,255,255,0.8);
+                 }
+                 @include mobile-view(){
+                     //remove the first colums margin from left in mobile view
+                     margin-left: 0 !important;
+                 }
+             }
+         }
+         ul.quick-links{
+             li{
+                 margin-left: 0 !important;
+             }
+         }
+         p.social-media{
+             i{
+                 font-size: 1.3rem;
+                 @include set-font(1rem, );
+                 color: rgba(255,255,255,0.8);
+             }
+         }
+         input{
+             background: rgba(255,255,255,0.8);
+             font-size: 1rem;
+             @include set-font(0.6rem, 0.8rem)
+         }
+         button{
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            @include set-font(0.7rem, );
+            width: 200px;
+           
+            @include mobile-view(){
+                width: 150px;
+            }
+         }
+         p.copy-right{
+             color: rgba(255,255,255,0.6);
+             font-size: 0.9rem;
+             @include set-font(0.7rem,0.8rem )
+         }
+       }
+ }

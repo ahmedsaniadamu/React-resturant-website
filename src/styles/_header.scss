@@ -1,0 +1,84 @@
+
+@import 'responsive' ;
+
+header{
+     height: 85vh !important;
+     
+     @include mobile-view() {
+         height: 60vh !important;
+     }
+
+    .description{
+         height: 70% !important;
+         width: 100%;
+         h1{
+             color: rgb(5, 156, 18);
+             font-size: 2.5rem;
+             @include mobile-view() {
+                 font-size: 1rem;
+             }
+         }
+         h4{
+             opacity: 0.9;
+             letter-spacing: 1px;
+             
+             @include mobile-view() {
+                font-size: 0.9rem;
+            }
+         }
+         p{
+             opacity: 0.9;
+            @include mobile-view(){
+                font-size: 0.7rem;
+            }
+         }
+         button{
+             background: rgb(5, 156, 18);
+             font-size: 0.8rem;
+             color: rgb(234, 241, 234);
+             letter-spacing: 1px;
+             font-weight: 600;
+             transition: .2s;
+             &:hover{
+                 opacity: 0.8;
+                 color: rgb(234, 241, 234) !important;
+             }
+         }
+    }
+    .banner-img{
+        height: 100% !important;
+        background: {
+            image: url('./bannerBg.png');
+            size: 100% 60% ;
+            repeat : no-repeat ;
+            position: 0px 40%;
+        };
+
+        @include mobile-view(){
+            background: { size: 100% 30% ; position: 0 20% };
+        }
+    }
+}
+
+// welcome animation adjacent to the header
+
+div.welcome-animation{
+    background: rgb(2, 126, 13);
+    color: rgb(234, 241, 234);
+    white-space: nowrap;
+    overflow-x: hidden;
+    p{
+        font-size: 1rem;
+        letter-spacing: 0.7px;
+        animation: slide 40s  2s  linear infinite ;
+        @include mobile-view(){
+            font-size: 0.8rem;
+            animation-duration: 20s;
+
+        }
+    }
+    @keyframes  slide {
+        from{ transform: translateX(0%);}   
+        to{transform: translateX(-200%);}
+    }
+}

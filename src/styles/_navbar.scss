@@ -1,0 +1,97 @@
+// navbar stylesheet
+
+@import 'responsive' ;
+
+nav.navbar{
+    background: rgb(4, 168, 17) !important;
+    
+    .img-logo{
+        height: 100%;
+        width: 80px;
+
+        @include mobile-view(){
+            height: 50%;
+            width: 60px;
+        }
+    }
+     a,.fa-bars{
+        color: rgb(255,255,255) !important;
+     }
+     a{
+         font-weight: 500;
+         letter-spacing: 1px;
+         transition: .2s;
+         &:hover,&:active{
+             opacity: 0.6;
+         }
+
+         @include mobile-view(){
+             font-size: 0.6rem;
+         }
+     }
+     button{
+         &:active,&:hover,&:focus{
+           border: none !important;
+           outline: none !important;
+         }
+     }
+     .navbar-nav{
+          @include mobile-view(){
+              margin-top: 1rem;
+              padding-left: 3px;
+          }
+             li{
+                 div.dropdown{
+                     border: none !important;
+                     a{
+                         background: transparent !important ;
+                         border: none !important;
+                         outline: none !important;
+                          &:focus{
+                             border:none !important ;
+                             outline: none !important;
+                         }
+                     }
+                     div.dropdown-menu{
+                         background: rgb(2, 168, 17) !important;
+                         border: none !important;
+                         width: 250px !important;
+
+                         @include mobile-view(){
+                             background: rgb(1, 88, 8) !important;
+                         }
+                        .list-group{
+                             background: transparent !important;
+                             li.list-group-item{
+                                 background: transparent !important;
+                                 border: none !important;
+                                 transition: .2s;
+                                 &:hover{
+                                     opacity: 0.8;
+                                     cursor: pointer;
+                                 }
+                                 @include mobile-view(){
+                                    font-size: 0.6rem;
+                                }
+                                i{
+                                    font-size: 1.1rem;
+                                }
+                             }
+                         }
+                     }
+                 }
+                 form{
+                     input{
+                          opacity: 0.8;
+                          font-size: 0.9rem;
+                         @include mobile-view(){
+                            font-size: 0.6rem;
+                            margin: {
+                                top: 2rem ; bottom: 2rem;
+                            };
+                         }
+                     }
+                 }
+             }
+         }
+}
