@@ -104,9 +104,9 @@ const ProductInfo = () => {
                     </div>                       
                 </div>
             </div>
-            <section className='other-products mt-5 w-100'>
-                 <h3 className='text-capitalize mt-3 pl-2 py-2'> you may also like ? </h3>
-                 <div className=' p-0 m-0 container-fluid '>
+            <section className='other-products mt-3 w-100'>
+                 <h3 className='text-capitalize  pl-2 py-2'> you may also like ? </h3>
+                 <div className=' p-0 m-0 container-fluid py-3'>
                       { MoreProducts.map( item => {
                           return <SingleItem key={item.id} {...item} />
                       }) }
@@ -118,7 +118,7 @@ const ProductInfo = () => {
 
 const SingleItem = ({name,price,image}) => {
     return (
-        <div className='d-inline-block mb-0 pb-0'>
+        <div className='d-inline-block mb-0 pb-0 mr-2 mr-md-3 mb-4'>
             <img src={image} alt={name} className='mt-1' />
             <p className='name text-center p-0 m-0 pt-1 pt-md-2'>
                 {name}

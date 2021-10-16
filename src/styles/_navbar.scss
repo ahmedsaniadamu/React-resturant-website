@@ -3,7 +3,8 @@
 @import 'responsive' ;
 
 nav.navbar{
-    background: rgb(4, 168, 17) !important;
+    background: rgb(2, 177, 17)!important;
+    opacity: 1;
     
     .img-logo{
         height: 100%;
@@ -53,12 +54,12 @@ nav.navbar{
                          }
                      }
                      div.dropdown-menu{
-                         background: rgb(2, 168, 17) !important;
+                         background: rgb(2, 177, 17) !important;
                          border: none !important;
                          width: 250px !important;
 
                          @include mobile-view(){
-                             background: rgb(1, 88, 8) !important;
+                             background: rgb(1, 139, 13) !important;
                          }
                         .list-group{
                              background: transparent !important;

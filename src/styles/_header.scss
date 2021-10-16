@@ -5,14 +5,14 @@ header{
      height: 85vh !important;
      
      @include mobile-view() {
-         height: 60vh !important;
+         height: 50vh !important;
      }
 
     .description{
          height: 70% !important;
          width: 100%;
          h1{
-             color: rgb(5, 156, 18);
+             color: rgb(2, 177, 17);
              font-size: 2.5rem;
              @include mobile-view() {
                  font-size: 1rem;
@@ -33,7 +33,7 @@ header{
             }
          }
          button{
-             background: rgb(5, 156, 18);
+             background: rgb(2, 177, 17) !important;
              font-size: 0.8rem;
              color: rgb(234, 241, 234);
              letter-spacing: 1px;
@@ -63,7 +63,7 @@ header{
 // welcome animation adjacent to the header
 
 div.welcome-animation{
-    background: rgb(2, 126, 13);
+    background: rgb(2, 177, 17);
     color: rgb(234, 241, 234);
     white-space: nowrap;
     overflow-x: hidden;

@@ -1,10 +1,5 @@
 import React,{useState} from 'react'
 
-const styles = {
-    backgroundImage : `url(${require('./products/Assets/background.jpg').default})` ,
-    backgroundRepeat:'no-reapeat',
-    backgroundSize:'100% 100%',
-}
 
 const users = [
     {
@@ -38,12 +33,12 @@ const OurUsers = () => {
     const [customers] =  useState(users) ;
 
     return (
-        <section style={ styles } className='our-users m-0 p-0'>
-            <div style={{background:'rgba(0,0,0,0.3)'}} className='h-100 w-100'> 
+        <section  className='our-users m-0 p-0'>
+            <div  className='h-100 w-100'> 
                     <h6 className='text-capitalize py-2'> 
                     from our customers
                 </h6>
-                    <div className='row w-100 p-0 m-0 mx-auto h-100 justify-content-md-around pt-3 pt-md-4'>
+                    <div className='row w-100 p-0 m-0 mx-auto h-100 justify-content-md-around '>
                         { customers.map( customer => {
                             return <SingleCustomer key={customer.id} {...customer} />
                         } ) }
@@ -55,12 +50,12 @@ const OurUsers = () => {
 
 const SingleCustomer = ({name,datePosted,image}) => {
     return (
-        <div className='col-12 col-md-5  p-0 m-0'>
-                 <div className='media'>
+        <div className='col-12 col-md-5  p-0 m-0 mt-3'>
+                 <div className='media mt-0 py-0 mb-0 '>
                     <img src={image}
                         alt={name} 
-                        className='mr-3 mt-3 ml-1 rounded-lg' />
-                        <div class='media-body'>
+                        className='mr-3 align-self-center ml-1 rounded-lg '  />
+                        <div class='media-body m-0 pb-0'>
                             <h4> {name} <small><i>Posted on {datePosted} </i></small></h4>
                             <p> Rating :   <i className='fas fa-star pl-1' ></i>
                                             <i className='fas fa-star pl-1' ></i>
@@ -68,7 +63,7 @@ const SingleCustomer = ({name,datePosted,image}) => {
                                             <i className='fas fa-star-half-alt pl-1' ></i>
                                             <i className='fas fa-star-half-alt pl-1' ></i>
                             </p>
-                            <p className='comment'>
+                            <p className='comment mb-0 pb-0 '>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                                 Magni delectus consectetur, id, voluptate vel saepe natus 
                                 assumenda sit impedit laboriosam voluptatem! 

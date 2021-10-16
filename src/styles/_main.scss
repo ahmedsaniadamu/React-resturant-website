@@ -21,14 +21,14 @@
 section.home{
       div.categories{
           div.shop-by-categories{
-            background:rgb(2, 126, 13) !important;
+            background:rgb(2, 177, 17) !important;
             color: rgb(255,255,255);
             font-size: 0.8;
             h6{
                 font-size: 1rem;
                 letter-spacing: 1px !important;
                 font-weight: 400 !important;
-                background: rgb(1, 102, 10);
+                background: rgb(2, 161, 15);
                 color: rgba(255,255,255,0.9);
 
                 @include mobile-view(){
@@ -142,20 +142,12 @@ section.home{
 
       // our users component style
       section.our-users{
-          margin-top: 7rem !important;
-          height: 500px !important;
-          width: 100%;
-
-          @include mobile-view(){
-              height: 650px !important
-          }
-          @include tablet-view(){
-            height: 750px !important
-        }          
+          margin-top: 3rem !important;
+          width: 100%;           
 
           h6{
               @include set-font(0.8rem, ) ;
-              background: rgba(10, 10, 10, 0.9);
+              background: rgba(8, 184, 2, 0.9);
               color: rgba(255,255,255,0.9);
               text-align: center;
           }
@@ -163,26 +155,19 @@ section.home{
           div.row{
                 div{
                     div.media{                        
-                        height: 160px !important;
-                        background: rgba(255,255,255,0.9) ;
+                        background: rgb(230, 252, 229) !important ;
                         opacity: 1;
                         width: 96%;
                         margin: auto;
                         margin-bottom: 0 !important;
                         padding-bottom: 0 !important;
                         border-radius: 0.3rem;
-      
-                        @include mobile-view(){
-                               height: 100px !important;                                
-                        }
-                        @include tablet-view(){
-                            height: 120px !important
-                        }
-      
+
                         img{
                             width: 80px;
                             height: 80px;
                             object-fit: cover;
+                            border-radius: 50% !important;
                         }
                         .media-body{
                             h4{
@@ -198,7 +183,7 @@ section.home{
                                 font-size: 0.8rem;
                                 @include set-font(0.6rem, 00.7rem) ;
                                 i{
-                                   color:rgb(212, 209, 5);
+                                   color:rgb(2, 177, 17);
                                 }
                             }
                         }
@@ -304,8 +289,6 @@ div.product-info{
              div{
                  width: 200px;
                  height: 230px;
-                 margin-right: 3rem;
-                 margin-bottom: 1.5rem;
                  margin-left: 0.2rem;
                  margin-top: 1rem;
                  box-shadow: 2px 2px 8px rgba(10, 10, 10, 0.2),
