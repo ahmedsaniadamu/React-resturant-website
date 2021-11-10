@@ -2,10 +2,10 @@
 @import 'responsive' ;
 
 header{
-     height: 85vh !important;
+     height: 250px !important;
      
      @include mobile-view() {
-         height: 50vh !important;
+         height: 200px !important;
      }
 
     .description{
