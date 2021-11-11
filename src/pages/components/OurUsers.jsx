@@ -55,7 +55,7 @@ const SingleCustomer = ({name,datePosted,image}) => {
                     <img src={image}
                         alt={name} 
                         className='mr-3 align-self-center ml-1 rounded-lg '  />
-                        <div class='media-body m-0 pb-0'>
+                        <div class='media-body m-0 pb-0 pt-2'>
                             <h4> {name} <small><i>Posted on {datePosted} </i></small></h4>
                             <p> Rating :   <i className='fas fa-star pl-1' ></i>
                                             <i className='fas fa-star pl-1' ></i>

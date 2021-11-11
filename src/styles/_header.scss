@@ -2,38 +2,74 @@
 @import 'responsive' ;
 
 header{
-     height: 250px !important;
+     height: 350px !important;
+     position: relative;
      
      @include mobile-view() {
-         height: 200px !important;
+         height: 230px !important;
      }
+    .carousel-container{
+        position: absolute;
+        top: 0; left: 0;
+        z-index: -1;         
+        .carousel{
+            img{                 
+                width: 100% !important;  
+                object-fit: fill;               
+                height: 350px !important;
+     
+                @include mobile-view() {
+                    height: 230px !important;
+                }
+            }
+        }
+    }
+    .header-content{
+        position: absolute;
+        width: 100% !important;  
+        object-fit: fill;               
+        height: 350px !important;
+        top: 0; left: 0;
+        z-index: 2;
+        background: rgba(0,0,0,0.4);
 
-    .description{
-         height: 70% !important;
-         width: 100%;
+        @include mobile-view(){  height: 230px !important; }
+        
+        & > div {
+            width: 80%;
+            @include mobile-view(){  width: 90%;}
+        }
          h1{
-             color: rgb(2, 177, 17);
-             font-size: 2.5rem;
+             color: rgb(73, 245, 20);
+             font-size: 2.2rem;
              @include mobile-view() {
                  font-size: 1rem;
              }
          }
          h4{
              opacity: 0.9;
+             font-size: 1.5rem;
              letter-spacing: 1px;
-             
+             color: rgb(227, 229, 231);
+             margin-left: 1rem !important;
              @include mobile-view() {
                 font-size: 0.9rem;
+                margin-left: 0.4rem !important;
             }
          }
          p{
              opacity: 0.9;
+             color: rgb(251, 251, 255);
+             margin-left: 1.5rem !important;
             @include mobile-view(){
                 font-size: 0.7rem;
+                margin-left: 0.5rem !important;
             }
          }
          button{
              background: rgb(2, 177, 17) !important;
+             margin-left: 2rem !important;
+             @include mobile-view(){ margin-left: 0.7rem !important;}
              font-size: 0.8rem;
              color: rgb(234, 241, 234);
              letter-spacing: 1px;
@@ -45,40 +81,6 @@ header{
              }
          }
     }
-    .banner-img{
-        height: 100% !important;
-        background: {
-            image: url('./bannerBg.png');
-            size: 100% 60% ;
-            repeat : no-repeat ;
-            position: 0px 40%;
-        };
-
-        @include mobile-view(){
-            background: { size: 100% 30% ; position: 0 20% };
-        }
-    }
+    
 }
 
-// welcome animation adjacent to the header
-
-div.welcome-animation{
-    background: rgb(2, 177, 17);
-    color: rgb(234, 241, 234);
-    white-space: nowrap;
-    overflow-x: hidden;
-    p{
-        font-size: 1rem;
-        letter-spacing: 0.7px;
-        animation: slide 40s  2s  linear infinite ;
-        @include mobile-view(){
-            font-size: 0.8rem;
-            animation-duration: 20s;
-
-        }
-    }
-    @keyframes  slide {
-        from{ transform: translateX(0%);}   
-        to{transform: translateX(-200%);}
-    }
-}

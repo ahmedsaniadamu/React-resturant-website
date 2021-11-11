@@ -56,10 +56,17 @@ section.home{
               @include mobile-view(){
                   font-size: 0.8rem;
               }
-              h4{
-                  color: rgba(10, 10, 10, 0.9);
-                  font-size: 1rem;
-                  font-weight: 600;
+              fieldset{
+                  width: 100% !important;
+                  height: 0 !important;                   
+
+                   legend{
+                        color: rgb(2, 177, 17);
+                        font-size: 1rem;
+                        font-weight: 400;
+                        margin: auto ;
+                        display: block;
+                   }
               }
               div.row{
                   div{
@@ -240,7 +247,7 @@ div.product-info{
             p{
                 @extend h6 ;
                 i{
-                    color: rgb(189, 176, 3);
+                    color: rgb(4, 175, 61);
                     @include set-font(0.5rem,0.8rem );
                 }
             }
@@ -300,7 +307,7 @@ div.product-info{
                     box-shadow: 2px 2px 4px rgba(10, 10, 10, 0.2),
                              -2px -2px 4px rgba(10, 10, 10, 0.2);
                     margin-right: 1.3rem;
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.7rem;
                     margin-top: 0.7rem;
                 }
                 img{
@@ -325,7 +332,7 @@ div.product-info{
 //contact page style -->
    section.contact-page{
        width: 100%;
-       background: rgb(204, 250, 207);
+       background: rgb(243, 253, 244);
        margin-top: 7rem !important;
        display: block;
 

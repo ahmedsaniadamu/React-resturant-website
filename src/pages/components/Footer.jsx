@@ -5,8 +5,8 @@ const Footer = () => {
       const [input,setInput] = React.useState('')
 
     return (
-        <footer className='w-100 p-0 m-0  pt-3'>
-            <div className='footer-content m-0 mt-5'>
+        <footer className='w-100 p-0 m-0  pt-1'>
+            <div className='footer-content m-0 mt-2'>
                   <div className='row w-100 p-0 pt-3 m-0 mx-auto justify-content-center justify-content-md-between'>
                       <div className='col-6 col-md-4 '>
                          <h4 className='text-capitalize mt-3'> About us </h4>
@@ -71,7 +71,7 @@ const Footer = () => {
                          </form>                         
                       </div>
                   </div>
-                  <p className='p-0 m-0 pt-5 mt-5 pb-3 text-center copy-right'> 
+                  <p className='p-0 m-0 pt-3 pb-1 text-center copy-right'> 
                              copyright &copy; deli foods <i>all right reserved</i>
                   </p>
             </div>

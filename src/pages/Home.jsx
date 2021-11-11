@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <>
-            <section className="mt-4 pt-5 home">
+            <section className="mt-1 mt-sm-3 pt-2 home">
                 
                   <div className="categories row  mx-auto w-100 p-0 m-0 ">
                       <div className="shop-by-categories col-4 p-0 m-0">
@@ -36,10 +36,13 @@ const Home = () => {
                          </ul>
                       </div>
                       <div className="why-us col-8  p-0 m-0">
-                          <h4 className="header mb-0 text-capitalize text-center"> 
-                               why choose us ?
-                           </h4>
-                           <div className="row p-0 m-0 mt-5 w-100 mx-auto justify-content-center">
+                         
+                            <fieldset className='w-100 header'>
+                                    <legend className="w-auto d-block text-capitalize px-2">
+                                          <strong> our dishes </strong>
+                                    </legend>
+                            </fieldset>
+                           <div className="row p-0 px-2 m-0 mt-5 w-100 mx-auto justify-content-center justify-content-md-between ">
                               <div className="col-6 col-md-4 text-center py-3">
                                     <i className="fas fa-truck-moving"></i>
                                     <br />
