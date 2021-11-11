@@ -7,11 +7,11 @@ const ProductContainer = () => {
       const [ productsList ] = React.useState(products )
 
     return (
-        <div className="product-container p-0 m-0 mt-2 ">
+        <div className="product-container p-0 m-0 pt-2 ">
            
-            <fieldset className='w-100'>
+            <fieldset className='w-100 '>
                 <legend className="w-auto d-block text-capitalize px-2">
-                     <strong> our dishes </strong>
+                     <strong className='font-weight-normal'> our dishes </strong>
                 </legend>
             </fieldset>
 

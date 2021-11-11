@@ -20,12 +20,7 @@ const ProductInfo = () => {
      } , [ id ] ) ;
 
     return (
-         <div className='product-info mt-2 mt-md-4 pt-3 pt-md-1'>
-            <fieldset>
-                <legend className='w-auto d-block text-capitalize px-2'>
-                       <strong> product Details. </strong>
-                </legend>
-            </fieldset>
+         <div className='product-info mt-2 mt-md-4 pt-3 pt-md-1'>             
             <div className='row m-0 p-0 w-100 mx-auto'>
                 <div className='col-6 product-image p-0 m-0'>
                 <img 

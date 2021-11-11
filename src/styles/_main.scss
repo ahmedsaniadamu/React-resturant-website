@@ -20,6 +20,9 @@
 
 section.home{
       div.categories{
+          background: url('./banner.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
           div.shop-by-categories{
             background:rgb(2, 177, 17) !important;
             color: rgb(255,255,255);
@@ -48,6 +51,13 @@ section.home{
                                  color: rgba(255,255,255,0.9);
                                  cursor: pointer;
                             }
+                    img{
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        display: inline-block;
+                    }
                 }
             }
           }
@@ -55,24 +65,22 @@ section.home{
               font-size: 1rem;
               @include mobile-view(){
                   font-size: 0.8rem;
-              }
-              fieldset{
-                  width: 100% !important;
-                  height: 0 !important;                   
-
-                   legend{
-                        color: rgb(2, 177, 17);
+              }                                
+                   h6{
+                        color: rgb(248, 252, 248);
                         font-size: 1rem;
                         font-weight: 400;
                         margin: auto ;
                         display: block;
+                        text-align: center;
+                        background: rgba(10, 10, 10, 0.6) ;
                    }
-              }
               div.row{
                   div{
+                         width: 100% !important;                          
                         i{
                             font-size: 2.5rem;
-                            color: rgb(2, 180, 17);
+                            color: rgb(245, 253, 246);
                             transition: .2s;
                             &:hover{
                                  font-size: 3rem;
@@ -81,16 +89,32 @@ section.home{
                         }
                         p{
                             font-weight: 600;
+                            color: rgb(230, 252, 229);
                         }
+                        p.text{
+                            font-size: 0.8rem;
+                            @include mobile-view(){
+                                font-size: 0.7rem;
+                            }
+                        }
+                  }                   
+                  div.first{
+                      background: rgba(7, 92, 126, 0.9);
                   }
+                  div.second{
+                    background: rgba(175, 84, 148, 0.9);
+                }
+                div.third{
+                    background: rgba(8, 128, 58, 0.9);
+                }
                    
               }
           }
       }
       div.product-container{
            fieldset{
-                  height: 0 !important;
-                  border-top: 0.3rem solid rgb(2, 180, 17);
+                  height: 3px !important;
+                  border-top:1px solid rgb(2, 180, 17);
                   border-radius: 5px;
                 legend{
                         text-align: center;
@@ -202,21 +226,7 @@ section.home{
 }
 
 // product information page styles.
-div.product-info{
-   
-    fieldset{
-        height: 0 !important;
-        border-top: 0.1rem solid rgb(2, 180, 17);
-        border-radius: 5px;
-        legend{
-                text-align: center;
-                font-size: 1rem;
-                @include set-font( 0.8rem,1rem );
-                strong{
-                    color: rgb(2, 180, 17);
-                }
-            }
-      }
+div.product-info{   
 
     div.row{
         div.product-image{
@@ -302,13 +312,14 @@ div.product-info{
                              -2px -2px 8px rgba(10, 10, 10, 0.2);
                
                 @include mobile-view(){
-                    width: 120px;
-                    height: 150px;
+                    width: 100px;
+                    height: 120px;
                     box-shadow: 2px 2px 4px rgba(10, 10, 10, 0.2),
                              -2px -2px 4px rgba(10, 10, 10, 0.2);
                     margin-right: 1.3rem;
                     margin-bottom: 0.7rem;
                     margin-top: 0.7rem;
+                    padding-bottom: 5px !important;
                 }
                 img{
                     width: 100%;
