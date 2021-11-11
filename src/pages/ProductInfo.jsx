@@ -118,7 +118,7 @@ const ProductInfo = () => {
 
 const SingleItem = ({name,price,image}) => {
     return (
-        <div className='d-inline-block mb-0 pb-0 mr-2 mr-md-3 mb-4'>
+        <div className='d-inline-block mb-0 pb-0 mr-2 mr-md-3 mb-4 ml-3'>
             <img src={image} alt={name} className='mt-1' />
             <p className='name text-center p-0 m-0 pt-1 pt-md-2'>
                 {name}
